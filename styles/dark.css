@@ -9,5 +9,35 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bg-image: url('../images/cover-image-dark.png');
+  --bg-color: #000028;
+  --text-color-title: #000028;
+  --text-color-content: #F1B2CE;
+  --accent-color: #FF0070;
+  --accent-color-transparent: #FF007066;
+  --text-font-size: 18px;
+  --text-font-family: 'IBM Plex mono', sans-serif;
+  --font-weight-main-text: 400;
+  --font-weight-title: 700;
+  --display-rec: block;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+  --bg-image: url('../images/cover-image-dark.png');
+  --bg-color: #000028;
+  --text-color-title: #000028;
+  --text-color-content: #F1B2CE;
+  --accent-color: #FF0070;
+  --accent-color-transparent: #FF007066;
+  --text-font-size: 18px;
+  --text-font-family: 'IBM Plex mono', sans-serif;
+  --font-weight-main-text: 400;
+  --font-weight-title: 700;
+  --display-rec: block;
+  }
+}
+
+.theme-dark .decorative-rec {
+  display: var(--display-rec);
+}
