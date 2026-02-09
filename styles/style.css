@@ -3,6 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-color: var(--bg-color);
+  background-attachment: fixed
 }
 
 .header {
@@ -279,6 +280,10 @@
   margin-top: 10px;
 }
 
+.text-block__subtitle + .text-block__content {
+  margin-top: -2px;
+}
+
 .text-block__content {
   font-weight: var(--font-weight-main-text);
   color: var(--text-color-content);
@@ -438,13 +443,11 @@
     margin: 0px;
   }
 }
-.gallery {
-  padding: 0px 0px;
-}
 
 @media (width >= 768px) {
   .gallery {
     padding: 0px 20px;
+    margin-block-start: 12px;
   }
 }
 
