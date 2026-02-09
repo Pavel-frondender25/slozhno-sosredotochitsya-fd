@@ -6,9 +6,11 @@
   --bg-image: url('../images/cover-image-dark.png');
   --bg-color: #000028;
   --text-color-title: #000028;
+  --text-header-footer: #DB00FF;
   --text-color-content: #F1B2CE;
   --accent-color: #FF0070;
-  --accent-color-transparent: #FF007066;
+  --accent-color-support: #FF0070;
+  --accent-color-transparent: #FF0070;
   --text-font-size: 18px;
   --text-font-family: 'IBM Plex mono', sans-serif;
   --font-weight-main-text: 400;

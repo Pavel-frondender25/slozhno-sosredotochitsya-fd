@@ -9,12 +9,14 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --bg-image: url('/./images/cover-image-light.png');
-  --bg-color: #FFF1F7;
-  --text-color-title: #FFC2E6;
+  --bg-image: url("../images/cover-image-light.png");
+  --bg-color: #fff1f7;
+  --text-color-title: #353430;
+  --text-header-footer: #ffc2e6;
   --text-color-content: #353430;
-  --accent-color: #FF8DCB;
-  --accent-color-transparent: #FF007066;
+  --accent-color: #ff8dcb;
+  --accent-color-support: #353430; 
+  --accent-color-transparent: #ff8dcb;
   --display-rec: none;
 }
 
@@ -24,16 +26,17 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-image: url('/./images/cover-image-light.png');
-    --bg-color: #FFF1F7;
-    --text-color-title: #FFC2E6;
+    --bg-image: url("../images/cover-image-light.png");
+    --bg-color: #fff1f7;
+    --text-color-title: #353430;
+    --text-header-footer: #ffc2e6;
     --text-color-content: #353430;
-    --accent-color: #FF8DCB;
-    --accent-color-transparent: #FF007066;
+    --accent-color: #ff8dcb;
+    --accent-color-transparent: #ff8dcb;
     --display-rec: none;
   }
 }
 
-.theme-light .title__text-decor {
+.theme-light .text-block__title-decor {
   color: var(--text-color-title);
 }
