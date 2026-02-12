@@ -118,24 +118,29 @@
   border: 1px solid transparent;
   cursor: pointer;
 }
-
+/*
 .header__theme-menu-button:focus {
   border: 1px solid transparent;
   border-bottom: 1px solid var(--accent-color-support);
-}
+}*/
 
 .header__theme-menu-button:hover {
   border: none;
-  outline: 1px solid var(--accent-color-support);
+  outline: 1px solid var(--accent-color-transparent);
 }
 
 .header__theme-menu-button:active {
   border: 1px solid var(--accent-color-support);
 }
+
 .header__theme-menu-button:focus-visible {
-  border: none;
-  outline: 1px solid var(--accent-color-support);
+  /*border: none;
+  outline: 1px solid var(--accent-color-support);*/
+  outline: none;  
+  border: 1px solid transparent;
+  border-bottom: 1px solid var(--accent-color-support);
 }
+/*убрал фокус и оставил focus-visible и сбросил обводку. Стало в соответсвии с макетом */
 
 .header__theme-menu-button_active {
   outline: 1px solid var(--accent-color-support);
@@ -197,7 +202,7 @@
   font-weight: 700;
   line-height: 83%;
   color: var(--text-header-footer);
-  text-shadow: 4px 4px 0 var(--accent-color-transparent);
+  text-shadow: 4px 4px 0 var(--accent-color);
 
   @media (width >= 768px), (width >= 1024px) {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -279,7 +284,7 @@
 .text-block__title,
 .text-block__subtitle {
   background-color: var(--accent-color);
-  color: var(--bg-color);
+  color: var(--accent-color-title);
   margin-bottom: 10px;
   font-size: var(--text-font-size);
   font-weight: var(--font-weight-title);
@@ -297,7 +302,7 @@
 }
 
 .text-block__content-link {
-  text-shadow: 2px 2px 2px var(--accent-color);
+  text-shadow: 2px 2px var(--accent-color);
   text-decoration: none;
 }
 
